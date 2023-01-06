@@ -179,13 +179,13 @@ body{
 @media (max-width:700px){
     #header_wrap{
         position: relative;
-        height: 60px;
+        height: 64px;
     }
     #header, #banner, #section1, #section3, #section4, .footer{
         width: calc(100% - 10%);
     }
     #header{
-        padding: 17px 0;
+        padding: 10px 0;
     }   
     .logo{
         display: none;
@@ -328,7 +328,7 @@ body{
     padding-top: 10%;
     text-align: left;
     position: relative;
-    background: url(../images/main_images/desserts03.png) no-repeat bottom 1% right;
+    background: url(../images/main_images/desserts03.png) no-repeat bottom 10% right;
 }
 .main_text h1{
     font-family: 'NanumSquareNeo-Variable';
@@ -364,12 +364,12 @@ body{
     box-sizing: border-box;
     border-radius: 27px 0 0 27px;
     position: absolute;
-    bottom: -15%;
+    bottom: -5%;
     right: 23%;
 }
 @media (max-width:700px){
     #section1_wrap{
-        height: 50vh;
+        height: 110vh;
         padding: 12vh 0;
     }   
     #section1{
@@ -408,6 +408,11 @@ body{
         bottom: -10vh;
         right: 20vw;
     }            
+}
+@media (max-width:400px){
+    #section1_wrap{
+        height: 46vh;
+    }   
 }
 /*section2*/
 #section2{
