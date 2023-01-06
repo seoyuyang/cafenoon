@@ -67,7 +67,7 @@ body{
     border-radius: 27px;
     width: 189px;
     height: 53px;
-    padding: 15px 0;
+    padding: 20px 0;
     box-sizing: border-box;
     margin-bottom: 70px;
 }
@@ -108,7 +108,7 @@ body{
     border: 1px solid #333;
     width: 88px;
     height: 30px;
-    padding: 5px 0;
+    padding: 7px 0;
     box-sizing: border-box;
     border-radius: 15px;
 }
@@ -340,8 +340,8 @@ body{
     font-size: 18px;
     padding: 13px 0;
     position: absolute;
-    top: 30%;
-    right: 23%;
+    top: 32%;
+    right: 25%;
 }
 .main_text p{
     font-family: 'NanumSquareNeo-Variable';
@@ -370,7 +370,7 @@ body{
 @media (max-width:700px){
     #section1_wrap{
         height: 50vh;
-        padding: 10vh 0;
+        padding: 12vh 0;
     }   
     #section1{
         position: relative;
@@ -504,6 +504,7 @@ body{
     }
     .footer_logo{
         width: 100%;
+        padding-top: 0;
     }
     .footer_text{
         width: 100%;
