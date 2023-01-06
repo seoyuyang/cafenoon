@@ -6,6 +6,7 @@
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'NanumBarunGothic';
     font-style: normal;
@@ -13,6 +14,7 @@
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
 }
+
 @font-face {
     font-family: 'NanumBarunGothic';
     font-style: normal;
@@ -20,6 +22,7 @@
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
 }
+
 .nanumbarungothic * {
     font-family: 'NanumBarunGothic', sans-serif;
 }
@@ -41,7 +44,7 @@
 ul{list-style: none;}
 a{text-decoration: none; color: #333;}
 body{
-    font-family: '나눔바른고딕';
+    font-family: 'NanumBarunGothic';
     font-size: 13px;
     line-height: 1.5em;
     color: #333;
@@ -99,7 +102,7 @@ body{
 }
 .util li a{
     display: block;
-    font-family: '강원교육모두';
+    font-family: 'GangwonEdu_OTFBoldA';
     font-size: 14px;
     font-weight: bold;
     border: 1px solid #333;
@@ -124,7 +127,7 @@ body{
 }
 .gnb> li> a{
     display: block;
-    font-family: '강원교육모두';
+    font-family: 'GangwonEdu_OTFBoldA';
     font-size: 18px;
     font-weight: bold;
     background-color: #fbc25a;
@@ -239,7 +242,7 @@ body{
         color: #333;
         text-decoration: none;
         display: block;
-        font-family: '강원교육모두';
+        font-family: 'GangwonEdu_OTFBoldA';
         font-size: 25px;
         font-weight: bold;
         padding: 20px 0;    
@@ -257,7 +260,7 @@ body{
     }
     .m_util li a{
         display: block;
-        font-family: '강원교육모두';
+        font-family: 'GangwonEdu_OTFBoldA';
         font-size: 20px;
         font-weight: bold;
         border: 1px solid #333;
@@ -328,12 +331,12 @@ body{
     background: url(../images/main_images/desserts03.png) no-repeat bottom 1% right;
 }
 .main_text h1{
-    font-family: '나눔스퀘어 네오 Heavy';
+    font-family: 'NanumSquareNeo-Variable';
     font-size: 40px;
     line-height: 1.2em;
 }
 .main_text h3{
-    font-family: '나눔스퀘어 네오 Bold';
+    font-family: 'NanumSquareNeo-Variable';
     font-size: 18px;
     padding: 13px 0;
     position: absolute;
@@ -341,7 +344,7 @@ body{
     right: 23%;
 }
 .main_text p{
-    font-family: '나눔스퀘어 네오 Regular';
+    font-family: 'NanumSquareNeo-Variable';
     font-size: 16px;
     line-height: 2em;
     width: 70%;
@@ -354,7 +357,7 @@ body{
     background-color: #333;
     color: #fff;
     text-align: center;
-    font-family: '강원교육모두';
+    font-family: 'GangwonEdu_OTFBoldA';
     font-size: 20px;
     font-weight: bold;
     padding: 15px 0;
