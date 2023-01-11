@@ -33,7 +33,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*나눔스퀘어 네오*/
+/*나눔스퀘어네오*/
 @font-face {
     font-family: 'NanumSquareNeo-Variable';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
@@ -526,7 +526,11 @@ body{
         padding: 10px 0;
     }    
     .sns{
-        width: 57%;
+        width: 60%;
         margin: 0 auto;
+    }
+    .sns li{
+        width: 25%;
+        margin-left: 0;
     }        
 }
