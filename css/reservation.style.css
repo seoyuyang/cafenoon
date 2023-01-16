@@ -33,6 +33,20 @@
     font-weight: normal;
     font-style: normal;
 }
+/*고운돋움*/
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*나눔스퀘어 네오*/
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none; color: #333;}
@@ -252,25 +266,159 @@ body{
 /*container*/
 #container{
 	padding: 100px 0;
+    text-align: right;
 }
-.event{
-    column-count: 3;
+.wrap{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
-.event li{
-    break-inside: avoid;
-    padding-bottom: 50px;
-    margin-right: 3%;
-}
-.event li img{
+.wrap div{width: 45%;}
+.wrap:nth-child(1){margin-bottom: 100px;}
+.wrap:nth-child(even){flex-direction: row-reverse;}
+.img{
     display: block;
     width: 100%;
-    height: auto;
 }
-.event li p{
-    font-size: 16px;
-    margin: 20px 0;
-    padding: 5px 0;
-    background-color: #eee;
+.wrap span{
+    font-family: 'GowunDodum-Regular';
+    font-size: 25px;
+}
+.wrap p{
+    text-align: left;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 14px;
+    padding: 30px 0;
+    line-height: 2.5em;
+}
+.wrap a{
+    display: inline-block;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 17px 0;
+    box-sizing: border-box;
+    width: 180px;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+.icon li{
+    width: 30%;
+    height: 136px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.icon li p{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    padding-top: 125px;
+    text-align: center;
+}
+.afternoon{position: relative;}
+.afternoon a{
+    position: absolute;
+    left: 0;
+}
+.afternoon .icon{padding-top: 80px;}
+.afternoon .icon li:nth-child(1){background-image: url(../images/reservation_images/icon_coffee.jpg);}
+.afternoon .icon li:nth-child(2){background-image: url(../images/reservation_images/icon_beverage.jpg);}
+.afternoon .icon li:nth-child(3){background-image: url(../images/reservation_images/icon_cake.jpg);}
+.space p{text-align: right}
+.space a{
+    border-radius: 25px 0 0 25px;
+}
+.space .icon li:nth-child(1){background-image: url(../images/reservation_images/icon_studio.jpg);}
+.space .icon li:nth-child(2){background-image: url(../images/reservation_images/icon_party.jpg);}
+.space .icon li:nth-child(3){background-image: url(../images/reservation_images/icon_meeting.jpg);}
+.popup_wrap{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.popup{
+    width: 750px;
+    height: 850px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -375px;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+}
+.popup h1{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+label{
+    display: flex;
+    align-self: center;
+}
+label:not(:last-child){
+    margin: 30px 0;
+}
+input, textarea, select{
+    display: block;
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+label span{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding-right: 20px;
+    width: 220px;
+    font-size: 14px;
+}
+.day {
+	outline-style:none;
+	border:none;
+	border:1px solid #fff;
+	padding:10px 15px;
+	width:118px;
+	background:url(../images/icon_wallpaper.png) no-repeat 90% center;
+	margin-right:20px;
+	margin:31.5px 20px 31.5px 0;
+}
+.btn{
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+    bottom: 30px;
+    margin-right: -90px;
+    color: #fff;
+    background-color: #699fd5;
+    border: none;
+    border-radius: 5px;
+}
+textarea{
+    height: 100px;
+    resize: none;
 }
 /*footer*/
 #footer_wrap{
