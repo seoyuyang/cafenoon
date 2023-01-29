@@ -303,6 +303,22 @@ body{
     background: #ffeb3b url(../images/join_images/join_kakao.png) no-repeat left 28px center;
     color: #333;
 }
+@media (max-width:700px){
+    .join{
+        width: calc(100% - 10%);
+        padding: 70px 10vw;
+    }
+    .join a{
+        width: calc(100% - 5%);
+    }    
+    .join_btn{
+        font-size: 20px;
+    }    
+    .sns_join{
+        font-size: 14px;
+        padding:  20px 0 20px 70px;
+    }
+}
 /*footer*/
 #footer_wrap{
     border-top: 3px solid #699fd5;
