@@ -254,7 +254,19 @@ body{
 #banner{
     width: 1920px;
     height: 300px;
-    background-color: #ddd;
+    background: url(../images/brand_images/brand_banner.jpg) no-repeat center;
+    background-attachment: fixed;
+}
+.banner_text{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (max-width:700px){
+    #banner{
+        width: 100%;
+    }
 }
 /*container*/
 #container{padding: 200px 0;}
