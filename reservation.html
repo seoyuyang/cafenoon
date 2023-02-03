@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/index_script.js"></script>
-    <script src="js/reservation_script.js1"></script>
+    <script src="js/reservation_script.js"></script>
     <script src="js/motion.js"></script>
     <!--css-->
     <link rel="stylesheet" href="css/reservation.style.css">
@@ -46,9 +46,9 @@
                 <li>
                     <a href="#">BRAND</a>
                     <ul class="m_submenu">
-                        <li><a href="#">Story</a></li>
-                        <li><a href="#">인테리어</a></li>
-                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="brand.html">Story</a></li>
+                        <li><a href="brand.html#section2">인테리어</a></li>
+                        <li><a href="brand.html#section3">오시는 길</a></li>
                     </ul>   
                 </li>
                 <li>
@@ -70,7 +70,7 @@
                     <a href="#">RESERVATION</a>
                     <ul class="m_submenu">
                         <li><a href="reservation.html">애프터눈 티 세트 예약</a></li>
-                        <li><a href="reservation.html">공간대여</a></li>
+                        <li><a href="reservation.html#space">공간대여</a></li>
                     </ul>    
                 </li>
                 <li>
@@ -97,9 +97,9 @@
         <div class="submenu_wrap"><!--submenu-->
             <div class="submenu">
                 <ul>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">인테리어</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="brand.html">Story</a></li>
+                    <li><a href="brand.html#section2">인테리어</a></li>
+                    <li><a href="brand.html#section3">오시는 길</a></li>
                 </ul>
                 <ul>
                     <li><a href="menu.html">Coffee</a></li>
@@ -112,7 +112,7 @@
                 </ul>
                 <ul>
                     <li><a href="reservation.html">애프터눈 티 세트 예약</a></li>
-                    <li><a href="reservation.html">공간대여</a></li>
+                    <li><a href="reservation.html#space">공간대여</a></li>
                 </ul>
                 <ul>
                     <li><a href="faq.html">FAQ</a></li>
@@ -121,12 +121,14 @@
         </div>
     </div><!--/gnb-->
     <div id="banner"><!--banner-->
-        <h1>Event</h1>
-        <p>카페눈의 다양한 메뉴를 즐겨보세요</p>
-        <p>Home > Event</p>
+        <div class="banner_text">
+            <h1>Reservation</h1>
+            <p>즐거운 티파티와 프라이빗한 공간대여를 즐겨보세요</p>
+            <p>Home > Reservation</p>
+        </div>
     </div><!--/banner-->
     <div id="container"><!--container-->
-        <div class="wrap afternoon">
+        <div id="afternoon" class="wrap">
             <div class="text">
                 <h2><img src="images/reservation_images/title_afternoon_tea_set.jpg" alt="title"></h2>
                 <span>애프터눈 티 세트</span>
@@ -152,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrap space">
+        <div id="space" class="wrap">
             <div class="text">
                 <h2><img src="images/reservation_images/title_space_rental.jpg" alt="title_space_rental"></h2>
                 <span>공간대여</span>
