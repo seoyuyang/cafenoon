@@ -334,37 +334,48 @@ body{
 .main_logo p{padding: 70px 0;}
 .sub_logo img{margin-bottom: 70px;}
 .bi p{margin-bottom: 70px;}
-.font{padding: 0 50px 70px;}
-.font li{width: 100%;}
+.font{padding: 0 0 70px 50px;}
+.font li{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.font li:nth-child(2){padding-bottom: 70px;}
 .font li p{
     float: left;
-    width: 50%;
+    width: 33.3%;
 }
+.font_title{font-size: 18px;}
 .color li{
     float: left;
     width: 50%;
 }
 .color_chip{
+    display: inline-block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 .yellow{background-color: #fbc25a;}
 .skyblue{background-color: #699fd5;}
+.color span{display: block;}
 .color_code{padding: 20px 0;}
 /*section2*/
 .interior_text{
-    display: flex;
-    text-align: center;
+    margin: 0 auto;
 }
 .interior_text p{
-    display: inline-block;
-    padding: 20px;
+    float: left;
+    padding: 20px 40px;
     background-color: #f2e8de;
+}
+.bar{
+
+    width: 1px;
+    margin: 0 25px;
 }
 .slider {
     width: 1200px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .sl_wrap {
