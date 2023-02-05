@@ -294,13 +294,13 @@ body{
 .main_title{
     display: inline-block;
     font-family: 'GangwonEdu_OTFBoldA';
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     background-color: #fbc25a;
     border-radius: 40px;
-    width: 300px;
-    height: 80px;
-    padding: 36px 0;
+    width: 200px;
+    height: 60px;
+    padding: 25px 0;
     box-sizing: border-box;
     margin-bottom: 70px;
 }
@@ -326,6 +326,7 @@ body{
 }
 .story{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .story li{
@@ -359,9 +360,14 @@ body{
 .skyblue{background-color: #699fd5;}
 .color span{display: block;}
 .color_code{padding: 20px 0;}
+@media (max-width:700px){
+    .story li{
+        width: 100%;
+    }    
+}
 /*section2*/
 .interior_text{
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .interior_text p{
     float: left;
@@ -425,6 +431,7 @@ body{
 /*section3*/
 .road{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .road li{
@@ -453,6 +460,14 @@ body{
     padding: 30px 0;
 }
 .road li:nth-child(2) p{padding: 5px 0;}
+@media (max-width:700px){
+    .road li{
+        width: 90%;
+    }    
+    .road li:nth-child(1){
+        margin-bottom: 30px;
+    }
+}
 /*footer*/
 #footer_wrap{
     border-top: 3px solid #699fd5;
