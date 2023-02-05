@@ -366,7 +366,6 @@ body{
 #afternoon .icon li:nth-child(1){background-image: url(../images/reservation_images/icon_coffee.jpg);}
 #afternoon .icon li:nth-child(2){background-image: url(../images/reservation_images/icon_beverage.jpg);}
 #afternoon .icon li:nth-child(3){background-image: url(../images/reservation_images/icon_cake.jpg);}
-#space p{text-align: center}
 #space a{
     border-radius: 25px 0 0 25px;
 }
@@ -460,9 +459,16 @@ textarea{
         width: 90%;
         margin: 0 auto;
     }
+    .wrap p{
+        text-align: center;
+    }    
     .photo{
         display: none;
     }
+    .wrap a, #space a{
+        border-radius: 25px;
+        left: 50%;
+    }    
 }
 /*footer*/
 #footer_wrap{
