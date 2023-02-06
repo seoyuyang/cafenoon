@@ -459,6 +459,9 @@ textarea{
         width: 90%;
         margin: 0 auto;
     }
+    .wrap h2 img{
+        width: 100%;
+    }
     .wrap p{
         text-align: center;
     }    
@@ -467,7 +470,6 @@ textarea{
     }
     .wrap a, #space a{
         border-radius: 25px;
-        left: 50%;
     }    
 }
 /*footer*/
