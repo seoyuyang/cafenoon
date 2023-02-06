@@ -305,9 +305,11 @@ body{
     margin-bottom: 70px;
 }
 /*section1*/
-#section1{padding: 0 100px;}
+#section1{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 #section1 p{
-    font-family: 'NanumSquareNeo-Variable';
     font-size: 14px;
     line-height: 2em;
     text-align: left;
@@ -346,6 +348,8 @@ body{
     width: 33.3%;
 }
 .font_title{font-size: 18px;}
+.gangwonedu{font-family: 'GangwonEdu_OTFBoldA';}
+.nanumsqure{font-family: 'NanumSquareNeo-Variable';}
 .color li{
     float: left;
     width: 50%;
@@ -361,27 +365,41 @@ body{
 .color span{display: block;}
 .color_code{padding: 20px 0;}
 @media (max-width:700px){
+    #section1{
+        padding-left: 0px;
+        padding-right: 0px;
+    }    
     .story li{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }    
+    .main_logo img{
+        width: 50%;
+    }
+    .sub_logo img{
+        width: 70%;
+    }
+    .font li p{
+        float: left;
+        width: 50%;
+    }
+    .color li:nth-child(1){
+        margin-bottom: 50px;
     }    
 }
 /*section2*/
 .interior_text{
-    margin: 70px auto;
+    text-align: center;
 }
 .interior_text p{
-    float: left;
-    padding: 20px 40px;
+    display: inline-block;
+    padding: 14px 60px;
     background-color: #f2e8de;
 }
-.bar{
-
-    width: 1px;
-    margin: 0 25px;
-}
+.interior_text p:nth-child(1){margin-right: 10px;}
 .slider {
     width: 1200px;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .sl_wrap {
@@ -415,7 +433,6 @@ body{
     color: black;
 }
 
-
 .slick-slide {
     transition: all ease-in-out .3s;
     opacity: 1;
@@ -427,6 +444,32 @@ body{
 
 .slick-current {
     opacity: 1;
+}
+@media (max-width:700px){
+    .interior_text p:nth-child(1){
+        margin-bottom: 10px;
+    }
+    .slider {
+        width: 100%;
+    }
+    .sl_wrap{
+        flex-wrap: wrap;
+    }  
+    .slider div h3 {
+        width: 100%;
+    }  
+    .slider div p {
+        width: 100%;
+        justify-content: space-between;
+    } 
+    .slider div p img{
+        width: 24%;
+        margin: 4% 0%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        display: none;
+    }
 }
 /*section3*/
 .road{
@@ -455,6 +498,7 @@ body{
     margin-right: 10px;
 }
 .address{padding-bottom: 70px;}
+.road li:nth-child(2) img{margin-top: 20px;}
 .road li:nth-child(2) h3{
     font-size: 18px;
     padding: 30px 0;
