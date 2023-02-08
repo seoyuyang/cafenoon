@@ -27,20 +27,16 @@
                 <li><a href="join.html">JOIN</a></li>
                 <li><a href="login.html">LOGIN</a></li>
             </ul>
-            <div class="menu_btn m_menu"><a href="#">
-                    <img
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+">
-                </a>
+            <div class="menu_btn m_menu">
+                <a href="#"><img src="../images/login_images/hamburger_btn.png" alt="hamburger_btn"></a>
             </div>
         </div>
     </div><!--/header-->
     <div class="m_menu"><!--m_menu-->
         <div class="menu_bg"></div>
         <div class="sidebar_menu">
-            <div class="close_btn"><a href="#">
-                    <img
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuOTU0IDIxLjAzbC05LjE4NC05LjA5NSA5LjA5Mi05LjE3NC0yLjgzMi0yLjgwNy05LjA5IDkuMTc5LTkuMTc2LTkuMDg4LTIuODEgMi44MSA5LjE4NiA5LjEwNS05LjA5NSA5LjE4NCAyLjgxIDIuODEgOS4xMTItOS4xOTIgOS4xOCA5LjF6Ii8+PC9zdmc+">
-                </a>
+            <div class="close_btn">
+                <a href="#"><img src="../images/login_images/cancel_btn.png" alt="cancel_btn"></a>
             </div>
             <ul class="menu_wrap">
                 <li>
@@ -184,6 +180,7 @@
         <div class="popup_wrap"><!--popup-->
             <div class="popup">
                 <h1>Reservation</h1>
+                <a href="javascript:return false;" class="cancel"><img src="../images/reservation_images/cancel.png" alt="cancel"></a>
                 <label for="">
                     <span>예약유형</span>
                     <select name="" id="">
@@ -197,11 +194,11 @@
                 </label>
                 <label for="">
                     <span>전화번호</span>
-                    <input type="text" style="width: 80px;">
-                    -
-                    <input type="text" style="width: 80px;">
-                    -
-                    <input type="text" style="width: 80px;">
+                    <input type="text" class="phonenumber">
+                    <p style="align-self: center;">-</p>
+                    <input type="text" class="phonenumber">
+                    <p style="align-self: center;">-</p>
+                    <input type="text" class="phonenumber">
                 </label>
                 <label for="">
                     <span>이메일</span>
@@ -209,8 +206,8 @@
                 </label>
                 <label for="">
                     <span>인원수</span>
-                    <input type="number" style="width: 60px;" max="20" min="2" value="2" class="space">
-                    <label for=""> ※ 예약 최소 인원은 2 ~ 20명으로 제한되니 양해 부탁드립니다.</label>
+                    <input type="number" max="20" min="2" value="2" class="space">
+                    <label for="" style="margin-left: 10px;">※ 예약 인원은 2 ~ 20명으로 제한되니 양해 부탁드립니다.</label>
                 </label>
                 <label for="">
                     <span>예약날짜</span>
