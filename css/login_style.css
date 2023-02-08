@@ -152,6 +152,7 @@ body{
     #header_wrap{
         position: relative;
         height: 64px;
+        border-bottom: 3px solid #fbc25a;
     }
     #header, #banner, #section1, #section3, #section4, .footer{
         width: calc(100% - 10%);
@@ -256,7 +257,6 @@ body{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
     text-align: center;
     display: inline-block;
-    
 }
 .login h1{
     font-size: 40px;
@@ -312,7 +312,7 @@ label{
     border-radius: 10px;
     font-size: 25px;
     background-color: #fbc25a;
-    padding: 20px 0;
+    padding: 23px 0;
     box-sizing: border-box;
     text-align: center;
 }
@@ -323,6 +323,30 @@ label{
 .signup a{text-decoration: underline;}
 .sns_login{display: inline-block;}
 .sns_login a{margin-left: 20px;}
+@media (max-width:700px){
+    #container{
+        padding: 50px 0;
+    }
+    .login{
+        width: calc(100% - 10%);
+        height: auto;
+        padding: 50px 8vw;
+        text-align: center;
+    }
+    input[type="text"], input[type="password"]{
+        width: 100%;
+    }
+    .id li{
+        width: 33.3%;
+    }    
+    .id li:nth-child(1){
+        width: 33.3%;
+    }
+    } 
+    .login_btn{
+        display: block;
+        width: 100%;
+    }                   
 /*footer*/
 #footer_wrap{
     border-top: 3px solid #699fd5;

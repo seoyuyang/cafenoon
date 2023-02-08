@@ -339,10 +339,12 @@ body{
     border-radius: 0 25px 25px 0;
     text-align: center;
     margin-bottom: 46px;
+    position: absolute;
 }
 .icon{
     display: flex;
     justify-content: space-between;
+    padding-top: 80px;
 }
 .icon li{
     width: 30%;
@@ -357,16 +359,15 @@ body{
     padding-top: 125px;
     text-align: center;
 }
-#afternoon{position: relative;}
+#afternoon, #space{position: relative;}
 #afternoon a{
-    position: absolute;
     left: 0;
 }
-#afternoon .icon{padding-top: 80px;}
 #afternoon .icon li:nth-child(1){background-image: url(../images/reservation_images/icon_coffee.jpg);}
 #afternoon .icon li:nth-child(2){background-image: url(../images/reservation_images/icon_beverage.jpg);}
 #afternoon .icon li:nth-child(3){background-image: url(../images/reservation_images/icon_cake.jpg);}
 #space a{
+    right: 0;
     border-radius: 25px 0 0 25px;
 }
 #space .icon li:nth-child(1){background-image: url(../images/reservation_images/icon_studio.jpg);}
@@ -388,8 +389,9 @@ body{
     border: 1px solid #ddd;
     border-radius: 10px;
     position: absolute;
-    top: 100px;
+    top: 50%;
     left: 50%;
+    margin-top: -425px;
     margin-left: -375px;
     padding: 50px;
     box-sizing: border-box;
@@ -399,10 +401,15 @@ body{
 .popup h1{
     padding-bottom: 30px;
     border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.cancel{
+    position: absolute;
+    top: 40px;
+    right: 50px;
 }
 label{
     display: flex;
-    align-self: center;
 }
 label:not(:last-child){
     margin: 30px 0;
@@ -410,7 +417,7 @@ label:not(:last-child){
 input, textarea, select{
     display: block;
     padding: 10px;
-    flex: 1;
+    flex: 0.5;
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
@@ -423,6 +430,7 @@ label span{
     width: 220px;
     font-size: 14px;
 }
+.phonenumber{width: 60px;}
 .day {
 	outline-style:none;
 	border:none;
@@ -440,7 +448,7 @@ label span{
     cursor: pointer;
     position: absolute;
     right: 50%;
-    bottom: 30px;
+    bottom: 40px;
     margin-right: -90px;
     color: #fff;
     background-color: #699fd5;
@@ -450,6 +458,7 @@ label span{
 textarea{
     height: 100px;
     resize: none;
+    flex: 1;
 }
 @media (max-width:700px){
     .wrap{
@@ -468,8 +477,32 @@ textarea{
     .photo{
         display: none;
     }
+    #space{padding-top: 50px;}
     .wrap a, #space a{
         border-radius: 25px;
+    }
+    #afternoon a, #space a{
+        position: absolute;
+        left: 50%;
+        margin-left: -90px;
+    }
+    .popup{
+        width: 100%;
+        height: auto;
+        top: 50%;
+        left: 0;    
+        margin-bottom: -25%;
+        margin-left: 0;
+        padding: 50px;
+    }
+    .popup span{
+        padding-bottom: 10px;
+    }
+    label{
+        flex-wrap: wrap;
+    }
+    label span{
+        width: 100%;
     }    
 }
 /*footer*/

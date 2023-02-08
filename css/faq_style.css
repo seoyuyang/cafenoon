@@ -316,6 +316,7 @@ body{
     font-size: 18px;
     text-align: left;
     padding: 30px 0 30px 35px;
+    align-self: center;
 }
 .answer{
     background: #fff;
@@ -346,20 +347,23 @@ body{
 @media (max-width:700px){
     .faqs{
         width: 100%;
-    }    
-    .faqs>li ul{
-        overflow: visible;
     }
-    .question li:nth-child(1){
-        width: 20%;
+    .question_text{
+    }        
+    .question li:nth-child(1), .question li:nth-child(3){
+        width: 15%;
     }    
     .question li:nth-child(2){
         width: 60%;
     }
-    .question li:nth-child(3){
+    .answer_icon{
         width: 20%;
-        padding: 28px 0;
-    }    
+        padding-right: 4%;
+    }
+    .answer_text{
+        width: 63%;
+        padding: 0;
+    }
 }
 /*footer*/
 #footer_wrap{

@@ -167,7 +167,7 @@ body{
         position: relative;
         height: 64px;
     }
-    #header, #banner, #section1, #section3, #section4, .footer{
+    #header, #banner, #container, .footer{
         width: calc(100% - 10%);
     }
     #header{
@@ -365,13 +365,14 @@ body{
 .color span{display: block;}
 .color_code{padding: 20px 0;}
 @media (max-width:700px){
-    #section1{
-        padding-left: 0px;
-        padding-right: 0px;
+    #container{
+        padding: 70px 0;
+    }
+    #section1, #section2{
+        padding: 0 0 100px 0;
     }    
     .story li{
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }    
     .main_logo img{
         width: 50%;
@@ -506,7 +507,7 @@ body{
 .road li:nth-child(2) p{padding: 5px 0;}
 @media (max-width:700px){
     .road li{
-        width: 90%;
+        width: 100%;
     }    
     .road li:nth-child(1){
         margin-bottom: 30px;
