@@ -484,14 +484,17 @@ textarea{
     }
     .popup{
         width: 100%;
-        height: auto;
         top: 50%;
         left: 0;    
         margin-bottom: -25%;
         margin-left: 0;
-        padding: 50px;
+        padding: 40px 30px;
         overflow-y: scroll;
     }
+    .cancel{
+        top: 3.5vh;
+        right: 8vw;
+    }    
     .popup span{
         padding-bottom: 10px;
     }
