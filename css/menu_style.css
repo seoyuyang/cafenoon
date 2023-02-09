@@ -1,0 +1,443 @@
+/*나눔바른고딕*/
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+/*강원교육모두*/
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*배스킨라빈스*/
+@font-face {
+    font-family: 'BRBA_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333;}
+body{
+    font-family: 'NanumBarunGothic';
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #333;
+}
+/*공통*/
+#header, #banner, .banner_text, #container, .footer{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (max-width:1200px){
+    #header, #banner, .banner_text, #container, .footer{
+        width: 100%;
+    }
+}
+/*header*/
+#header_wrap{
+    height: 140px;
+}
+#header{
+    padding: 25px 0;
+    position: relative;
+}
+.m_logo{display: none;}
+.util{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+}
+.util li{
+    float: left;
+    margin-left: 12px;
+}
+.util li a{
+    display: block;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #333;
+    width: 88px;
+    height: 30px;
+    padding: 7px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#gnb_wrap{
+    border-bottom: 3px solid #fbc25a;
+}
+.gnb{
+    width: 997px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.gnb> li{
+    width: 19%;
+}
+.gnb> li> a{
+    display: block;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fbc25a;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 23px 23px 0 0;
+}
+.gnb> li> a:hover{
+    color: #fff;
+    background-color: #699fd5;
+}
+.submenu_wrap{
+    position: absolute;
+    top: 186px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #699fd5;
+}
+.submenu{
+    width: 997px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.submenu ul{
+    width: 19%;
+    text-align: center;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 0;
+    font-size: 15px;
+}
+.submenu li a:hover{
+    color: #699fd5;
+}
+.m_menu{display: none;}
+@media (max-width:1200px){
+    .gnb{
+        width: 90%;
+    }
+    .submenu{
+        width: 90%;
+    }        
+}
+@media (max-width:700px){
+    #header_wrap{
+        position: relative;
+        height: 64px;
+    }
+    #header, #banner, #section1, #section3, #section4, .footer{
+        width: calc(100% - 10%);
+    }
+    #header{
+        padding: 10px 0;
+    }   
+    .logo{
+        display: none;
+    }
+    .m_logo{
+        display: block;
+    }
+    #gnb_wrap, .util{
+        display: none;
+    }
+    .m_menu{display: block;}
+    .menu_btn{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        text-align: left;
+        padding: 10px;
+    }
+    .menu_bg{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top:0;
+        display: none;
+        z-index: 2;
+    }
+    .sidebar_menu{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: #fbc25a;
+        position: absolute;
+        top:0;
+        left: -100%;
+        z-index: 20;
+    }
+    .close_btn{
+        width: 25px;
+        height: 25px;
+        margin:20px;
+    }
+    .close_btn > a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .menu_wrap{
+        list-style: none;
+        padding: 20px 20px;
+    }
+    .menu_wrap li a{
+        display: block;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        font-family: 'GangwonEdu_OTFBoldA';
+        font-size: 25px;
+        font-weight: bold;
+        padding: 20px 0;    
+    }
+    .m_submenu li a{
+        display: block;
+        font-size: 20px;
+        padding: 10px 20px;    
+    }
+    .m_util{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .m_util li a{
+        display: block;
+        font-family: 'GangwonEdu_OTFBoldA';
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid #333;
+        width: 120px;
+        height: 40px;
+        padding: 13px 0;
+        box-sizing: border-box;
+        border-radius: 20px;    
+    }
+}
+/*banner*/
+#banner{
+    width: 100%;
+    height: 300px;
+    background: url(../images/menu_images/menu_banner.jpg) no-repeat center;
+    background-attachment: fixed;
+    position: relative;
+}
+.banner_text{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+.banner_text h1{
+    font-family: 'BRBA_B';
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+.banner_text p{padding-top: 30px;}
+@media (max-width:700px){
+    #banner{
+        width: 100%;
+    }
+}
+/*container*/
+#container{
+    width: 100%;
+	background-color:#fff;
+	padding: 30px 0;
+	text-align: center;
+}
+/*tab*/
+#box1{
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 85px;
+    display: inline-block;
+    background-color: #f2e8de;
+}
+#box1>li{
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    padding: 6px 0;
+    width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.tap{
+	cursor:pointer;
+	display:inline-block;
+}
+#box1>li.on>.box1_1{
+    width: 100%;
+}
+#box1>li>.box1_1{
+	height:0;
+	overflow:hidden;
+}
+.box1_1{
+    width: 1200px;
+    padding: 30px 0 90px;
+    margin: 0 auto;
+}
+.title{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 25px;
+    background-color: #fbc25a;
+    width: 200px;
+    height: 60px;
+    padding: 25px 0;
+    box-sizing: border-box;
+    border-radius: 0 30px 30px 0;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu li{
+    width: 23.5%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.menu li h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+.menu li p{
+    color: #777;
+    padding: 10px 0 30px;
+}
+.menu li img{
+    transition: transform 1s;
+}
+.menu li img:hover{
+    transform: scale(1.1);
+}
+@media (max-width:700px){
+    .box1{
+        width: 100%;
+    }
+    .box1_1{
+        width: 100%;
+    }    
+    .menu{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .menu li{
+        width: 45%;
+    }
+    .menu li img{
+        width: 90%;
+    }
+}
+/*footer*/
+#footer_wrap{
+    border-top: 3px solid #699fd5;
+}
+.footer{
+    display: flex;
+    padding: 30px 0;
+}
+.footer_logo{
+    width: 20%;
+    padding-top: 20px;
+}
+.footer_text{
+    width: 40%;
+    box-sizing: border-box;
+    text-align: left;
+    margin-right: 20%;
+}
+.footer_link{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_text p{
+    padding-top: 15px;
+}
+.sns{
+    width: 20%;
+}
+.sns li{
+    float: left;
+    margin-left: 10px;
+}
+@media (max-width:700px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_logo{
+        width: 100%;
+        padding-top: 0;
+    }
+    .footer_text{
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        margin-right: 0;
+    }
+    .footer_link{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer_link li{
+        padding: 10px 0;
+    }    
+    .sns{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .sns li{
+        width: 25%;
+        margin-left: 0;
+    }        
+}
